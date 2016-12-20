@@ -1,0 +1,12 @@
+#alias
+#let $PATH="/usr/bin:~/bin:".$PATH 
+let $PATH="~/.rvm/bin:/usr/bin:/opt/local/lib/postgresql92/bin:~/node_modules/.bin:/opt/local/bin:/opt/local/sbin:~/bin:".$PATH 
+alias c='clear'
+alias dir='dir -N --color=auto'
+alias less='/bin/less -r'
+alias ls='/bin/ls --color=auto'
+alias grep='/bin/egrep -i'
+alias la='ls -la' alias ll='ls -l'
+alias lo='ls -1' alias lt='ls -ltr'
+
+ 
