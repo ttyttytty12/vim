@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/root'
+let g:netrw_dirhist_2='/root/.vim/bundle/winmanager/plugin'
+let g:netrw_dirhist_3='/home/vagrant/repository/src/apps/eoaservice'
+let g:netrw_dirhist_4='/root/.vim/bundle/cscope-quickfix/plugin'
