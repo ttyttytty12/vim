@@ -166,5 +166,37 @@ nmap F :call Mydict()<CR>
 "        \])
 "
 
+syntax enable
+syntax on
+"colorscheme koehler
+colorscheme morning
+
+"highlight aa ctermfg=130 ctermbg=1 cterm=bold guifg=#c0c000 gui=bold
+"highlight bb ctermfg=130 ctermbg=12 cterm=bold guifg=#c0c000 gui=bold
+"highlight cc ctermfg=130 ctermbg=81 cterm=bold guifg=#c0c000 gui=bold
+"highlight dd ctermfg=130 ctermbg=242 cterm=bold guifg=#c0c000 gui=bold
+"highlight ee ctermfg=130 ctermbg=13 cterm=bold guifg=#c0c000 gui=bold
+
+ highlight aa ctermfg=7 ctermbg=242 guifg=LightGrey guibg=DarkGrey
+ highlight bb term=reverse ctermbg=224 gui=undercurl guisp=Red
+ highlight cc term=reverse ctermbg=81 gui=undercurl guisp=Blue
+ highlight dd term=reverse ctermbg=225 gui=undercurl guisp=Magenta
+ highlight ee term=underline ctermbg=14 gui=undercurl guisp=DarkCyan
+
+highlight Search term=standout ctermfg=0 ctermbg=151 guifg=Blue guibg=Yellow
+
+nmap <leader>cma :syntax match aa /<C-R>=expand("<cword>")<CR>/<CR>
+nmap <leader>cmb :syntax match bb /<C-R>=expand("<cword>")<CR>/<CR>
+nmap <leader>cmc :syntax match cc /<C-R>=expand("<cword>")<CR>/<CR>
+nmap <leader>cmd :syntax match dd /<C-R>=expand("<cword>")<CR>/<CR>
+nmap <leader>cme :syntax match ee /<C-R>=expand("<cword>")<CR>/<CR>
+
+autocmd InsertLeave * se cul "行高亮"
+"highlight CurrentLine term=reverse ctermbg=224 gui=undercurl guisp=NONE guifg=LightGrey guibg=Blue
+"highlight CurrentLine term=reverse ctermbg=224 gui=undercurl guisp=NONE guifg=LightGrey guibg=NONE
+highlight CursorLine  term=reverse ctermbg=3 gui=undercurl guisp=Blue guifg=LightGrey guibg=Blue
+highlight CursorColumn term=reverse ctermbg=3 gui=undercurl guisp=Red guifg=c0c000 guibg=Red
+set cursorline "行高亮生效"
+set cursorcolumn "列高亮生效"
 
 
